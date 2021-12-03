@@ -42,6 +42,11 @@ public class Board {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 
 	
 	
